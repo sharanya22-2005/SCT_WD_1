@@ -1,0 +1,6 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A highly responsive, modern portfolio landing page with interactive features, a profile editor, radar skill charts, theme switching, projects search/filters, a comments section, and styled with Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
