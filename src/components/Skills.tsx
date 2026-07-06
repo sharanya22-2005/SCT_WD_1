@@ -16,36 +16,36 @@ export default function Skills() {
 
   const skillsData: SkillItem[] = [
     {
-      name: 'Frontend',
-      value: 92,
+      name: 'Programming',
+      value: 94,
       color: '#6366f1', // Indigo-500
-      icon: '⚛️',
-      desc: 'Modern, high-performance interfaces.',
-      subskills: ['React', 'CSS', 'JS'],
+      icon: '💻',
+      desc: 'Proficient in object-oriented and structural programming.',
+      subskills: ['C', 'C++', 'Java', 'Python'],
     },
     {
-      name: 'Backend',
-      value: 84,
-      color: '#818cf8', // Indigo-400
-      icon: '🐍',
-      desc: 'Clean logic and scalable server structures.',
-      subskills: ['Python', 'APIs', 'Logic'],
-    },
-    {
-      name: 'Design',
+      name: 'Web Dev',
       value: 88,
-      color: '#4f46e5', // Indigo-600
-      icon: '🎨',
-      desc: 'User-centered thinking and pixel-perfect layouts.',
-      subskills: ['Figma', 'Wireframes', 'Prototyping'],
+      color: '#818cf8', // Indigo-400
+      icon: '🌐',
+      desc: 'Building responsive, highly structured web applications.',
+      subskills: ['HTML5', 'CSS3', 'JavaScript'],
     },
     {
-      name: 'Tools',
+      name: 'Concepts',
       value: 90,
+      color: '#4f46e5', // Indigo-600
+      icon: '🧠',
+      desc: 'Strong foundation in design and computer science theories.',
+      subskills: ['OOP', 'Data Structures', 'Algorithms'],
+    },
+    {
+      name: 'Soft Skills',
+      value: 92,
       color: '#a5b4fc', // Indigo-300
-      icon: '🛠️',
-      desc: 'Collaborative development and smooth workflows.',
-      subskills: ['Git', 'VS Code', 'Notion'],
+      icon: '🤝',
+      desc: 'Collaborative mindset and strong task leadership.',
+      subskills: ['Teamwork', 'Git', 'Leadership', 'Communication'],
     },
   ];
 
@@ -163,13 +163,15 @@ export default function Skills() {
 
   const getLucideIcon = (name: string) => {
     switch (name) {
-      case 'Frontend':
-        return <Laptop className="w-5 h-5 text-gold-500" />;
-      case 'Backend':
+      case 'Programming':
         return <Cpu className="w-5 h-5 text-gold-500" />;
-      case 'Design':
+      case 'Web Dev':
+        return <Laptop className="w-5 h-5 text-gold-500" />;
+      case 'Concepts':
         return <Palette className="w-5 h-5 text-gold-500" />;
-      case 'Tools':
+      case 'Soft Skills':
+        return <Wrench className="w-5 h-5 text-gold-500" />;
+      default:
         return <Wrench className="w-5 h-5 text-gold-500" />;
     }
   };

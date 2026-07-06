@@ -10,7 +10,7 @@ interface HeroProps {
 }
 
 export default function Hero({ profile, onNavigateToProjects, onNavigateToContact }: HeroProps) {
-  const words = ['Web Developer', 'UI/UX Enthusiast', 'Problem Solver'];
+  const words = ['Information Science Student', 'Software Developer', 'Problem Solver'];
   const [wordIndex, setWordIndex] = useState(0);
   const [typedText, setTypedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
